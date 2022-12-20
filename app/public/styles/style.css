@@ -1,10 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+.strong{
+    display: inline-block;
+    min-width: 120px;
+}
+.data{
+    display: inline-block;
+    min-width: 60px;
+}
+
 .container-fluid{
+    background: rgb(238,55,68);
+background: linear-gradient(323deg, rgba(238,55,68,1) 0%, rgba(102,164,255,1) 100%);
+background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 .machine-body{
     margin: auto;
@@ -22,4 +40,33 @@
 
 .logo{
     font-family: 'Audiowide', Arial, Helvetica, sans-serif;
+}
+
+.product{
+    width: 100%;
+    max-width: 600px;
+}
+
+.buy-btn{
+    background-color: aqua;
+}
+
+.screen{
+    border:solid 1px aqua;
+    border-left: 0;
+    border-right: 0;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    padding: 25px 25px 25px 25px;
+    font-size: 1.2rem;
+    background: rgb(131,58,180);
+background: -moz-linear-gradient(90deg, rgba(131,58,180,0) 0%, rgba(225, 0, 255, 0.2) 49%, rgba(252,176,69,0) 100%);
+background: -webkit-linear-gradient(90deg, rgba(131,58,180,0) 0%,  rgba(225, 0, 255, 0.2) 49%, rgba(252,176,69,0) 100%);
+background: linear-gradient(90deg, rgba(131,58,180,0) 0%,  rgba(225, 0, 255, 0.2) 49%, rgba(252,176,69,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#833ab4",endColorstr="#fcb045",GradientType=1);
+}
+
+.item:hover{
+    border: 1px solid chocolate;
 }
