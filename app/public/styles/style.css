@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap&family=Open+Sans:wght@500&display=swap');
 
+body{
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 500;
+}
 ul{
     list-style: none;
     padding: 0;
@@ -22,7 +26,7 @@ background-size: cover;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 .machine-body{
     margin: auto;
@@ -33,7 +37,7 @@ background-size: cover;
     align-items: center;
     border-radius: 2rem;
     background-color: white;
-    height: 95vh;
+    min-height: 95vh;
     width: 100%;
     max-width: 800px;
 }
@@ -61,12 +65,24 @@ background-size: cover;
     padding: 25px 25px 25px 25px;
     font-size: 1.2rem;
     background: rgb(131,58,180);
-background: -moz-linear-gradient(90deg, rgba(131,58,180,0) 0%, rgba(225, 0, 255, 0.2) 49%, rgba(252,176,69,0) 100%);
-background: -webkit-linear-gradient(90deg, rgba(131,58,180,0) 0%,  rgba(225, 0, 255, 0.2) 49%, rgba(252,176,69,0) 100%);
-background: linear-gradient(90deg, rgba(131,58,180,0) 0%,  rgba(225, 0, 255, 0.2) 49%, rgba(252,176,69,0) 100%);
+background: -moz-linear-gradient(90deg, rgba(131,58,180,0) 0%, rgba(255, 102, 0, 0.11) 49%, rgba(252,176,69,0) 100%);
+background: -webkit-linear-gradient(90deg, rgba(131,58,180,0) 0%,  rgba(255, 102, 0, 0.11) 49%, rgba(252,176,69,0) 100%);
+background: linear-gradient(90deg, rgba(131,58,180,0) 0%,  rgba(255, 102, 0, 0.11) 49%, rgba(252,176,69,0) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#833ab4",endColorstr="#fcb045",GradientType=1);
 }
 
 .item:hover{
     border: 1px solid chocolate;
+}
+
+.buy-btn:hover{
+    background-color: chartreuse;
+}
+
+.btn-danger{
+    width: 100px;
+    aspect-ratio: 1;
+    background-color: crimson;
+    padding: 15px;
+    border-radius: 50%;
 }

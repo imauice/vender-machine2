@@ -60,7 +60,7 @@ angular.module('App', [])
         //machine methode
 
         machine.addstock = function () {
-            machine.products.push({ stock: 50 });
+            machine.products.forEach((data)=>data.push({stock:50}));
         };
 
         var selectProductPrice;
