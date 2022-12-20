@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+.container-fluid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.machine-body{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    border-radius: 2rem;
+    background-color: white;
+    height: 95vh;
+    width: 100%;
+    max-width: 800px;
+}
+
+.logo{
+    font-family: 'Audiowide', Arial, Helvetica, sans-serif;
+}
