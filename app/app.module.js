@@ -93,7 +93,14 @@ angular.module('App', [])
 
         machine.putcoin = function (coin) {
 
-            if (selectProductPrice > 0) {
+            if(selectProductStock <=0){
+                machine.screen='Out of stock please check another service';
+                return;
+            }
+
+            if (selectProductPrice > 0 && selectProductStock>0) {
+
+               
 
                 if(coin<=selectProductPrice){
 
