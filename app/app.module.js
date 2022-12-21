@@ -75,6 +75,11 @@ angular.module('App', [])
      
 
         machine.selectproduct = function (id,price, productname,stock) {
+            if(stock<=0){
+                machine.screen='Out of stock please check another service';
+                return;
+            };
+
             if(machine.oncoin==0){
                 console.log('stock: ',stock);
                 selectProductId = id;
@@ -92,11 +97,6 @@ angular.module('App', [])
         }
 
         machine.putcoin = function (coin) {
-
-            if(selectProductStock <=0){
-                machine.screen='Out of stock please check another service';
-                return;
-            }
 
             if (selectProductPrice > 0 && selectProductStock>0) {
 
