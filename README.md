@@ -7,9 +7,9 @@
 Rist please clone this repository
 and then you can run script
 
-$ npm run copy
-$ npm run build
-$ serve dist/app
+-$ npm run copy
+-$ npm run build
+-$ serve dist/app
 
 Thanks for watching imauice
 
