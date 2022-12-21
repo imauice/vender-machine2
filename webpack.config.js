@@ -5,7 +5,7 @@ module.exports={
     devtool:'eval-source-map',
     entry:'./app/app.module.js',
     output:{
-        path:path.resolve(__dirname,'dist'),
+        path:path.resolve(__dirname,'dist/app'),
         filename:'app.module.js'
     }
 };
